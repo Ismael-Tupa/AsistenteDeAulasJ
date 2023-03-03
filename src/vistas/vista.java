@@ -22,6 +22,7 @@ import ventanas.ventanaOcupante;
 public class vista {
     public static void MenuPrincipal(ventanaMenuPrincipal a){
         a.setVisible(true);
+        
     }
     //vista de aula
     public static int mostrarRegistroAula(ventanaNuevaAula v, ventanaAulas v2, String op){
@@ -54,14 +55,11 @@ public class vista {
         if(fila > -1){
             au2 = (String)v2.tablaAula.getValueAt(fila, 0);
         }
-        String au = vistaNA.jTextAula.getText().trim();
-        int can = Integer.parseInt((String) vistaNA.jTextCapacidad.getText().trim());
-        String des = vistaNA.jTextDescripcion.getText().trim();
         
         Object[] res = new Object[4];
-        res[0] = au;
-        res[1] = can;
-        res[2] = des;
+        res[0] = vistaNA.jTextAula.getText().trim();
+        res[1] = vistaNA.jTextCapacidad.getText().trim();
+        res[2] = vistaNA.jTextDescripcion.getText().trim();
         res[3] = au2;
         
         return res;
@@ -144,16 +142,11 @@ public class vista {
             cuil2 = Integer.parseInt((String)v2.tablaOcupante.getValueAt(fila, 3).toString());
         }
         
-        String nom = vo.inputNombreOcupante.getText().trim();
-        String carr = vo.inputCarreraOcupante.getText().trim();
-        String carg = vo.inputCargoOcupante.getText().trim();
-        int cuil = Integer.parseInt((String) vo.inputCuilOcupante.getText().trim());
-        
         Object[] res = new Object[5];
-        res[0] = nom;
-        res[1] = carr;
-        res[2] = carg;
-        res[3] = cuil;
+        res[0] = vo.inputNombreOcupante.getText().trim();
+        res[1] = vo.inputCarreraOcupante.getText().trim();
+        res[2] = vo.inputCargoOcupante.getText().trim();
+        res[3] = vo.inputCuilOcupante.getText().trim();
         res[4] = cuil2;
         
         return res;

@@ -16,7 +16,7 @@ public class Conexion {
                 con = DriverManager.getConnection("jdbc:mysql://localhost/ins_aaa", "root", "");
             }
         }catch(SQLException e){
-            JOptionPane.showMessageDialog(null, "Error: "+e);
+            System.out.println("Error en la conexion a Base de datos: "+e);
         }
         return con;
     }  

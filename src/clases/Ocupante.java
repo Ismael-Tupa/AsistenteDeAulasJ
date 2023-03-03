@@ -1,12 +1,13 @@
 package clases;
 
+import java.io.Serializable;
 import java.util.Objects;
 
 /**
  *
  * @author ISMAEL
  */
-public class Ocupante {
+public class Ocupante implements Serializable{
     private String nombre,carrera,cargo;
     private int cuil;
      

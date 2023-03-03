@@ -1,10 +1,12 @@
 package clases;
 
+import java.io.Serializable;
+
 /**
  *
  * @author ISMAEL
  */
-public class EstadoAula {
+public class EstadoAula implements Serializable{
     private String estado;
     private Aula aula;
     private Ocupante ocupante;

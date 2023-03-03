@@ -25,6 +25,10 @@ public class ventanaNuevaAula extends javax.swing.JFrame {
 
         jPanel1 = new javax.swing.JPanel();
         jTextField4 = new javax.swing.JTextField();
+        jScrollPane1 = new javax.swing.JScrollPane();
+        jTextArea1 = new javax.swing.JTextArea();
+        jScrollPane2 = new javax.swing.JScrollPane();
+        jTextArea2 = new javax.swing.JTextArea();
         jPanel2 = new javax.swing.JPanel();
         jLabel2 = new javax.swing.JLabel();
         jLabel3 = new javax.swing.JLabel();
@@ -48,6 +52,14 @@ public class ventanaNuevaAula extends javax.swing.JFrame {
 
         jTextField4.setText("jTextField4");
 
+        jTextArea1.setColumns(20);
+        jTextArea1.setRows(5);
+        jScrollPane1.setViewportView(jTextArea1);
+
+        jTextArea2.setColumns(20);
+        jTextArea2.setRows(5);
+        jScrollPane2.setViewportView(jTextArea2);
+
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
         jPanel2.setBorder(javax.swing.BorderFactory.createTitledBorder(null, "Registro", javax.swing.border.TitledBorder.DEFAULT_JUSTIFICATION, javax.swing.border.TitledBorder.DEFAULT_POSITION, new java.awt.Font("Tahoma", 0, 12))); // NOI18N
@@ -57,6 +69,13 @@ public class ventanaNuevaAula extends javax.swing.JFrame {
         jLabel3.setText("Capacidad:");
 
         jLabel4.setText("Descripcion:");
+
+        jTextAula.setToolTipText("");
+        jTextAula.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jTextAulaActionPerformed(evt);
+            }
+        });
 
         jTextCapacidad.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -133,8 +152,12 @@ public class ventanaNuevaAula extends javax.swing.JFrame {
     }// </editor-fold>//GEN-END:initComponents
 
     private void jTextCapacidadActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jTextCapacidadActionPerformed
-        // TODO add your handling code here:
+       
     }//GEN-LAST:event_jTextCapacidadActionPerformed
+
+    private void jTextAulaActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jTextAulaActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_jTextAulaActionPerformed
 
     
 
@@ -146,10 +169,14 @@ public class ventanaNuevaAula extends javax.swing.JFrame {
     private javax.swing.JLabel jLabel4;
     private javax.swing.JPanel jPanel1;
     private javax.swing.JPanel jPanel2;
+    private javax.swing.JScrollPane jScrollPane1;
+    private javax.swing.JScrollPane jScrollPane2;
+    private javax.swing.JTextArea jTextArea1;
+    private javax.swing.JTextArea jTextArea2;
     public javax.swing.JTextField jTextAula;
     public javax.swing.JTextField jTextCapacidad;
     public javax.swing.JTextField jTextDescripcion;
     private javax.swing.JTextField jTextField4;
     // End of variables declaration//GEN-END:variables
-
+    
 }

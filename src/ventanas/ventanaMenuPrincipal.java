@@ -32,6 +32,7 @@ public class ventanaMenuPrincipal extends javax.swing.JFrame {
         btnAula = new javax.swing.JButton();
         btnOcupante = new javax.swing.JButton();
         btnGestionAula = new javax.swing.JButton();
+        btnSincronisar = new javax.swing.JButton();
 
         jTextField1.setText("jTextField1");
 
@@ -63,6 +64,8 @@ public class ventanaMenuPrincipal extends javax.swing.JFrame {
 
         btnGestionAula.setText("Gestion de Aula");
 
+        btnSincronisar.setText("sincronizar");
+
         javax.swing.GroupLayout jPanel1Layout = new javax.swing.GroupLayout(jPanel1);
         jPanel1.setLayout(jPanel1Layout);
         jPanel1Layout.setHorizontalGroup(
@@ -72,7 +75,8 @@ public class ventanaMenuPrincipal extends javax.swing.JFrame {
                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
                     .addComponent(btnAula, javax.swing.GroupLayout.DEFAULT_SIZE, 150, Short.MAX_VALUE)
                     .addComponent(btnOcupante, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                    .addComponent(btnGestionAula, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                    .addComponent(btnGestionAula, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                    .addComponent(btnSincronisar, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
                 .addContainerGap(30, Short.MAX_VALUE))
         );
         jPanel1Layout.setVerticalGroup(
@@ -84,7 +88,9 @@ public class ventanaMenuPrincipal extends javax.swing.JFrame {
                 .addComponent(btnOcupante)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                 .addComponent(btnGestionAula)
-                .addContainerGap(22, Short.MAX_VALUE))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                .addComponent(btnSincronisar)
+                .addContainerGap(18, Short.MAX_VALUE))
         );
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
@@ -117,7 +123,9 @@ public class ventanaMenuPrincipal extends javax.swing.JFrame {
     private void btnAulaActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnAulaActionPerformed
         // TODO add your handling code here:
     }//GEN-LAST:event_btnAulaActionPerformed
-
+    private void btnOcupadoActionPerformed(java.awt.event.ActionEvent evt){
+    
+    }
     private void jTextField2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jTextField2ActionPerformed
         // TODO add your handling code here:
     }//GEN-LAST:event_jTextField2ActionPerformed
@@ -128,8 +136,9 @@ public class ventanaMenuPrincipal extends javax.swing.JFrame {
     public javax.swing.JButton btnAula;
     public javax.swing.JButton btnGestionAula;
     public javax.swing.JButton btnOcupante;
+    public javax.swing.JButton btnSincronisar;
     private javax.swing.JLabel jLabel1;
-    private javax.swing.JPanel jPanel1;
+    public javax.swing.JPanel jPanel1;
     private javax.swing.JScrollPane jScrollPane1;
     private javax.swing.JTextArea jTextArea1;
     private javax.swing.JTextField jTextField1;

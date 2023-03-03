@@ -1,12 +1,13 @@
 package clases;
 
+import java.io.Serializable;
 import java.util.Objects;
 
 /**
  *
  * @author ISMAEL
  */
-public class Aula {
+public class Aula implements Serializable{
    	private String nombre;
 	private int capacidad;
 	private String descripcion;

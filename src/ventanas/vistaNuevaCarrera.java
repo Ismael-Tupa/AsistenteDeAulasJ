@@ -1,8 +1,3 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
 package ventanas;
 
 /**
@@ -101,9 +96,9 @@ public class vistaNuevaCarrera extends javax.swing.JFrame {
                                     .addComponent(jTextnombreCarrera, javax.swing.GroupLayout.DEFAULT_SIZE, 150, Short.MAX_VALUE)
                                     .addComponent(jTextidCarrera)
                                     .addComponent(jTextTipoCarrera))))
-                        .addContainerGap(46, Short.MAX_VALUE))
+                        .addContainerGap(57, Short.MAX_VALUE))
                     .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel1Layout.createSequentialGroup()
-                        .addGap(0, 90, Short.MAX_VALUE)
+                        .addGap(0, 101, Short.MAX_VALUE)
                         .addComponent(cancelarRegistro)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                         .addComponent(guardarRegistro)
@@ -130,7 +125,7 @@ public class vistaNuevaCarrera extends javax.swing.JFrame {
                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(jTextDuracionCarrera, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(jLabel4))
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 36, Short.MAX_VALUE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 41, Short.MAX_VALUE)
                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(cancelarRegistro)
                     .addComponent(guardarRegistro))
@@ -190,6 +185,7 @@ public class vistaNuevaCarrera extends javax.swing.JFrame {
             v.jTextnombreCarrera.setText("");
             v.jTextTipoCarrera.setText("");
             v.jTextDuracionCarrera.setText("");
+            
         }
     }
 }
